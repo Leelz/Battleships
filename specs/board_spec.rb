@@ -6,8 +6,7 @@ require_relative '../ship'
 class TestBoard < Minitest::Test
 
 	def setup
-		@cell = Cell.new()
-    	@board = Board.new(10, 10, @cell)
+    	@board = Board.new(10, 10)
     	@destroyer = Ship.new(4, "Destroyer")
   	end
 
@@ -25,15 +24,14 @@ class TestBoard < Minitest::Test
 
 	def test_ship_added_horizontally
 		@board.add_ship_horizontally(0, 0, @destroyer)
-   		assert_equal("full", @board.check_cell_status(0,0))
-   		assert_equal("full", @board.check_cell_status(1,0))
-   		assert_equal("full", @board.check_cell_status(2,0))
-   		assert_equal("full", @board.check_cell_status(3,0))
-   		assert_equal("unknown", @board.check_cell_status(4,0))
-   		assert_equal("unknown", @board.check_cell_status(0,1))
-   		assert_equal("unknown", @board.check_cell_status(0,2))
-   		assert_equal("unknown", @board.check_cell_status(0,3))
+   		assert_equal("full", @board.check_cell_status(0,1))
+   		assert_equal("full", @board.check_cell_status(0,2))
+   		assert_equal("full", @board.check_cell_status(0,3))
    		assert_equal("unknown", @board.check_cell_status(0,4))
+   		assert_equal("unknown", @board.check_cell_status(1,0))
+   		assert_equal("unknown", @board.check_cell_status(2,0))
+   		assert_equal("unknown", @board.check_cell_status(3,0))
+   		assert_equal("unknown", @board.check_cell_status(4,0))
  	end
 
 
