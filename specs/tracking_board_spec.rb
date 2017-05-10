@@ -1,13 +1,10 @@
-require 'minitest/autorun'
-require_relative '../board'
-require_relative '../cell'
-require_relative '../ship'
+equire 'minitest/autorun'
+require_relative '../tracking_board'
 
-class TestBoard < Minitest::Test
+class TestTrackingBoard < Minitest::Test
 
 	def setup
-    	@board = Board.new(10, 10)
-    	@destroyer = Ship.new(4, "Destroyer")
+    	@tracking_board = Tracking_Board.new(10, 10)
   	end
 
 	def test_board_should_have_10_rows
@@ -49,8 +46,3 @@ class TestBoard < Minitest::Test
 
 
 end
-
-# * 1 ship of length 5;
-# * 1 ship of length 4;
-# * 2 ships of length 3;
-# * 1 ship of length 2;

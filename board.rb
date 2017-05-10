@@ -42,11 +42,11 @@ class Board
 		end
 	end
 
-	# def add_ship_vertically(x_coord, y_coord, ship)
-	# 	(0...ship.health).each do |n|
-	# 		add_ship_to((y_coord + n), x_coord ,ship)			
-	# 	end
-	# end
+	def add_ship_vertically(x_coord, y_coord, ship)
+		(0...ship.health).each do |n|
+			add_ship_to((y_coord + n), x_coord)			
+		end
+	end
 
 
 end
