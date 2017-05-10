@@ -1,0 +1,57 @@
+# SIMUL8 Technical Interview
+ 
+Congratulations on getting through to the technical interview. This challenge is designed to test your ability to structure code and meet requirements within a deadline.
+ 
+You can use any language of your choice. We expect the code to be easy to read, with appropriate comments.
+ 
+Your completed code should be returned, as a link to a `.zip` file or a link to a public repository. The root folder should contain one of:
+ 
+* `start.bat`
+* `start.sh`
+* A `.sln` file
+ 
+which, when run, will create the necessary environment, and run your solution.
+ 
+We can then evaluate its effectiveness in meeting the requirements.
+ 
+Please also supply a `Readme` file containing your explanation of the solution to each part, and any setup, command-line options, or other information we need to get your solution working. You should specify the language and any frameworks, including testing frameworks, that you have used.
+ 
+## Goal
+ 
+Battleships is a 2-player game. Each player has 2 boards - a primary board and a tracking board. On their primary board, they lay out their own ships prior to the start of the game. On their tracking board, they record the results of missiles they have fired into their opponent's grid.
+ 
+The winner is the first player to hit every one of their opponent's squares that contain a ship.
+ 
+## Requirements
+ 
+Please complete the requirements in order.
+ 
+### Build a board
+ 
+A board is a 10x10 grid. Each square is either empty or full. Build a primary board for each player and mark 17 squares within that grid as full.
+ 
+### Tracking board
+ 
+Each player has a tracking board. This is a 10x10 grid which tracks the shots that the player has fired onto their opponents primary board.
+ 
+In addition to the empty or full states, each square has an initial, unknown, state for each square. When a user selects a square in the tracking grids, the unknown value should change to match the corresponding value on the other player's primary grid.
+ 
+### Validate layout
+ 
+A valid board has 17 full squares. These represent 5 ships, who have a width of
+1 square, and are aligned either horizontally or vertically on the grid, and do not overlap.
+ 
+These consist of:
+ 
+* 1 ship of length 5;
+* 1 ship of length 4;
+* 2 ships of length 3;
+* 1 ship of length 2;
+ 
+Ensure that the boards from step 1 are valid.
+ 
+### Determine winner
+ 
+Players should take turns to select a square on their tracking board.
+ 
+If, after their turn, all of their opponents full squares have been discovered, the player is declared the winner.
