@@ -3,7 +3,7 @@ class Tracking_Board
 attr_reader :state
 
 	def initialize(rows, columns)
-		@state = Array.new(rows) { Array.new(columns) { Cell.new } }
+		@state = Array.new(rows) { Array.new(columns) { Tracking_Cell.new } }
 	end
 
 	def number_of_rows

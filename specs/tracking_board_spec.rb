@@ -1,4 +1,4 @@
-equire 'minitest/autorun'
+require 'minitest/autorun'
 require_relative '../tracking_board'
 
 class TestTrackingBoard < Minitest::Test
@@ -19,29 +19,13 @@ class TestTrackingBoard < Minitest::Test
 		assert_equal(100, @board.number_of_cells)
 	end
 
-	def test_ship_added_horizontally
-		@board.add_ship_horizontally(0, 0, @destroyer)
-   		assert_equal("full", @board.check_cell_status(0,1))
-   		assert_equal("full", @board.check_cell_status(0,2))
-   		assert_equal("full", @board.check_cell_status(0,3))
-   		assert_equal("unknown", @board.check_cell_status(0,4))
-   		assert_equal("unknown", @board.check_cell_status(1,0))
-   		assert_equal("unknown", @board.check_cell_status(2,0))
-   		assert_equal("unknown", @board.check_cell_status(3,0))
-   		assert_equal("unknown", @board.check_cell_status(4,0))
- 	end
+  def test_hit_when_ship_present
+    assert_equal("full", @board.shoot(0,0))
+  end
 
-
-	def test_ship_added_vertically
-		@board.add_ship_vertically(0, 0, @destroyer)
-		assert_equal("full", @board.check_cell_status(1,0))
-   		assert_equal("full", @board.check_cell_status(2,0))
-   		assert_equal("full", @board.check_cell_status(3,0))
-   		assert_equal("unknown", @board.check_cell_status(4,0))
-   		assert_equal("unknown", @board.check_cell_status(0,1))
-   		assert_equal("unknown", @board.check_cell_status(0,2))
-   		assert_equal("unknown", @board.check_cell_status(0,3))
- 	end
+  def test_miss_when_ship_absent
+    assert_equal("empty", @board.shoot(0,0))
+  end
 
 
 
