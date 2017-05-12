@@ -47,11 +47,4 @@ class TestGameBoard < Minitest::Test
 		assert_equal("empty", @board.check_cell_status(0,3))
 	end
 
-
-
 end
-
-# * 1 ship of length 5;
-# * 1 ship of length 4;
-# * 2 ships of length 3;
-# * 1 ship of length 2;

@@ -1,5 +1,7 @@
 require_relative('Board')
 
+# The primary board where the player places his/her boats
+
 class Primary_Board < Board
 
 attr_reader :state

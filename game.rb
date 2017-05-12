@@ -1,5 +1,7 @@
 class Game
 
+	# The game class represents the rules of the game, and enforces those rules
+
 	attr_reader :current_player, :winner 
 
 	def initialize(players, board)
@@ -9,9 +11,13 @@ class Game
 		@winner = nil;
 	end
 
+	# Validation
+
 	def number_of_players
 		return @players.count
 	end
+
+	# Controls who's turn it is
 
 	def update_current_player
 		@current_player = @players.rotate![0]
@@ -22,8 +28,8 @@ class Game
 		update_current_player
 	end
 
-	def is_won?
+	# def is_won?
 
-	end
+	# end
 
 end

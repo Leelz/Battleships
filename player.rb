@@ -1,5 +1,8 @@
 class Player
 
+	# The player is responsible for firing at the opponents board
+	# telling the opponent when the opponent has hit a ship.
+
 	attr_reader :name
 
 	def initialize(name)

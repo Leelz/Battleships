@@ -12,12 +12,10 @@ class TestTrackingCell < Minitest::Test
 	end
 
 	def test_cell_can_be_full
-		@cell.hit
 		assert_equal("full", @cell.hit)
 	end
 
 	def test_cell_can_be_empty
-		@cell.miss
 		assert_equal("empty", @cell.miss)
 	end
 

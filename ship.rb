@@ -1,5 +1,7 @@
 class Ship
 
+# Ship has responsibility for keeping track of its health and when it's sunk
+
 	attr_accessor :health, :name, :sunk
 
 	def initialize(health, name)
