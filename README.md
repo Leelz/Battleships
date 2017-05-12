@@ -18,9 +18,9 @@ so I created a Board object as a super class.
 
 2. Primary Board
 
-I created the Primary Board class which, when instantiated, created 10 arrays 
-with a nested array of 10 strings in each. This represented the 10 x 10 grid.
-All the strings were a cell object, which have the default content of "empty" 
+I created the Primary Board class which, when instantiated, creates an array 
+with 10 nested arrays, 10 cells in each. This represented the 10 x 10 grid.
+The cells are instances of the cell class, which have the default content of "empty" 
 i.e. not containing a ship and shot begins as false.
 
 I created the functions add_ship_to, add_ship_horizontally and add_ship_vertically 
