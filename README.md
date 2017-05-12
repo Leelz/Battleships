@@ -51,17 +51,20 @@ I created the game class to manage the players in the game, who's turn it is and
 
 With more time I would have added:
 1. A terminal app, allowing the user to play the game.
-2. A function to determine when one player has won.
-3. Function guards
+2. Add more comments to make it easier to read
+3. A function to determine when one player has won.
+4. Give players a fleet of ships so they can keep track of which player have sunk
+5. Function guards
   (i) to make sure a user doesn't place a ship where one is already placed.
   (ii)to make sure the user has to place ships on the 10 x 10 grid.
-4. I would have changed the board so that the grid is A - J, 1 - 10, and each cell has a letter and number e.g. A1.
-5. A start.bh file to run the game.
-6. Cell as a super-class.
-7. Evaluate if instance variables should be attr_accessor or attr_reader.
-8. Enter in the ship types as modules.
-9. More dialogue between players.
-10. Create a "fleet" instance variable so that players have an array of ships.
+  (iii)to make sure there's no more than 2 players.
+6. I would have changed the board so that the grid is A - J, 1 - 10, and each cell has a letter and number e.g. A1.
+7. A start.bh file to run the game.
+8. Cell as a super-class.
+9. Evaluate if instance variables should be attr_accessor or attr_reader.
+10. Enter in the ship types as modules.
+11. More dialogue between players.
+
 
 I really enjoyed taking on this challenge and learned from the problems I encountered. Namely, I'm not familiar with .bat or .sh files
 beyond using them to run specs files, therefore this is something I'll need to learn more about.
