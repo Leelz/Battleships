@@ -10,6 +10,7 @@ Currently the game is at the development and testing stage; to run all tests ent
 # Response to Brief
 
 1. Build a Board
+
 I saw that I'd be creating a Primary Board and Tracking Board with some functions duplication, 
 so I created a Board object as a super class.
 
