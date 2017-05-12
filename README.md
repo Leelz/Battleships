@@ -32,8 +32,8 @@ Primary Board class inherits several functions from Board.
 3. Tracking Board
 
 I then created the Tracking Board class, which inherits from the super-class board.  
-I created a tracking cell class with the default content of "unknown" then becomes either
-"full" or "empty" during the game after a player has fired at it.
+I created a tracking cell class with the default content of "unknown" which then becomes either
+"full" or "empty" during the game, after a player has fired at it.
 
 4. Player
 
@@ -41,7 +41,7 @@ I created the player object to allow for a player to shoot at the opponents ship
 when the opponent has hit the player's ship.
 
 5. Ship
-The ship has a name, health and sunk status. It also have the function receive shot so it can alter it's health
+Ships have a name, health and sunk status. They also have a function receive shot so it can alter it's health
 when it's shot.
 
 6. Game
@@ -61,11 +61,12 @@ With more time I would have added:
 7. Evaluate if instance variables should be attr_accessor or attr_reader.
 8. Enter in the ship types as modules.
 9. More dialogue between players.
+10. Create a "fleet" instance variable so that players have an array of ships.
 
-I really enjoyed taking on this challenge and learned from the problems I encountered.  Namely, I'm not familiar with .bat or .sh files
+I really enjoyed taking on this challenge and learned from the problems I encountered. Namely, I'm not familiar with .bat or .sh files
 beyond using them to run specs files, therefore this is something I'll need to learn more about.
 
 To create the grid, I instantiated Array objects in the Primary Board and Tracking Board constructors,
 whereas I now feel like it would be better to write a function in the Board super-class, which they inherit.
 
-Lastly, I got stuck creating a function to sink ships, I plan to continue learning and working on this.
+I got stuck creating a function to sink ships, I plan to continue learning and working on this.
