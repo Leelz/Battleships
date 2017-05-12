@@ -1,21 +1,3 @@
-# SIMUL8 Technical Interview
- 
-Congratulations on getting through to the technical interview. This challenge is designed to test your ability to structure code and meet requirements within a deadline.
- 
-You can use any language of your choice. We expect the code to be easy to read, with appropriate comments.
- 
-Your completed code should be returned, as a link to a `.zip` file or a link to a public repository. The root folder should contain one of:
- 
-* `start.bat`
-* `start.sh`
-* A `.sln` file
- 
-which, when run, will create the necessary environment, and run your solution.
- 
-We can then evaluate its effectiveness in meeting the requirements.
- 
-Please also supply a `Readme` file containing your explanation of the solution to each part, and any setup, command-line options, or other information we need to get your solution working. You should specify the language and any frameworks, including testing frameworks, that you have used.
- 
 ## Goal
  
 Battleships is a 2-player game. Each player has 2 boards - a primary board and a tracking board. On their primary board, they lay out their own ships prior to the start of the game. On their tracking board, they record the results of missiles they have fired into their opponent's grid.
