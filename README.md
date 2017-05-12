@@ -3,6 +3,7 @@
 # Languages & Frameworks
 The game is written in Ruby, to run it make sure you'll need Ruby installed on your computer.
 No frameworks were used.
+For testing I used the library, Minitest.
 
 # How to run:
 To run all tests enter "ruby run_specs.sh" into the terminal while at the top level. 
