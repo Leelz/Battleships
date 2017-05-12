@@ -5,7 +5,9 @@ The game is written in Ruby, to run it make sure you'll need Ruby installed on y
 No frameworks were used.
 
 # How to run:
-Currently the game is at the development and testing stage; to run all tests enter "ruby run_specs.sh" into the terminal while in the top level. 
+Currently the game is at the development and testing stage; to run all tests enter "ruby run_specs.sh" into the terminal while at the top level. 
+
+There is no terminal game or front-end, yet.
 
 # Response to Brief
 
