@@ -7,7 +7,7 @@ No frameworks were used.
 # How to run:
 Currently the game is at the development and testing stage; to run all tests enter "ruby run_specs.sh" into the terminal while in the top level. 
 
-##Response to Brief
+# Response to Brief
 
 1. Build a Board
 I saw that I'd be creating a Primary Board and Tracking Board with some functions duplication, 
