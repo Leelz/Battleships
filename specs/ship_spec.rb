@@ -4,8 +4,8 @@ require_relative '../ship'
 class TestShip < Minitest::Test
 
 	def setup
-    	@ship = Ship.new(4, "Destroyer")
-  	end
+		@ship = Ship.new(4, "Destroyer")
+	end
 
 	def test_has_health
 		assert_equal(4, @ship.health)

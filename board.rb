@@ -1,11 +1,5 @@
 class Board
 
-	attr_reader :state
-
-	def initialize(rows, columns)
-		@state = Array.new(rows) { Array.new(columns) { Cell.new } }
-	end
-
 	def number_of_rows
 		return @state.length
 	end
@@ -30,22 +24,6 @@ class Board
 
 	def check_cell_status(x_coord, y_coord)
 		return @state[x_coord][y_coord].content
-	end
-
-	def add_ship_to(x_coord, y_coord)
-		@state[x_coord][y_coord].add_ship
-	end
-
-	def add_ship_horizontally(x_coord, y_coord, ship)
-		(0...ship.health).each do |n|
-			add_ship_to(y_coord, (x_coord + n))
-		end
-	end
-
-	def add_ship_vertically(x_coord, y_coord, ship)
-		(0...ship.health).each do |n|
-			add_ship_to((y_coord + n), x_coord)			
-		end
 	end
 
 

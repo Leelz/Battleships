@@ -5,14 +5,10 @@ class TestCell < Minitest::Test
 
 	def setup
 		@cell = Cell.new()
-  	end
-
-	def test_content_should_start_unknown
-		assert_equal("unknown", @cell.content)
 	end
 
-	def test_content_should_start_not_shot
-		assert_equal(false, @cell.shot)
+	def test_content_should_start_unknown
+		assert_equal("empty", @cell.content)
 	end
 
 	def test_ship_can_be_added
